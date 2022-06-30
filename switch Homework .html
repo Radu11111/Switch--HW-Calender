@@ -1,0 +1,52 @@
+<script>
+    //Chose the calendar
+    const GREGORIAN = "gregorian"//The first day of the week is monday
+    const HINDUS = "hindus"      //The first day of the week is sunday
+    
+    let calender = prompt("Chose the name of the calender:\n"+"gregorian or hindus")
+    
+    //Chose the day
+    let day = parseInt(prompt("Day of the week?"))
+    // hw1:using if/else + prompt() -Done
+    //     -what calender?
+
+    if( calender == GREGORIAN) {
+    switch(day) { //=== identic
+      case 1:document.write("MONDAY");  break  // "1" ===1
+      case 2: document.write("TUESDAY"); break 
+      case 3: document.write("WEDNESDAY"); break 
+      case 4: document.write("THURSDAY"); break 
+      case 5:
+          let times = 3
+          while ( times > 0 ){
+              document.write("Yeeey!!! :)")
+              times--
+          } 
+           document.write("FRIDAY"); break
+      case 6: document.write("SATURDAY"); break  
+      case 7: document.write("SUNDAY"); break
+
+      default: document.write("Are you drunk? "); break
+    }
+    }else if(calender == HINDUS) {
+    switch (day) { //=== identic
+            case 1: document.write("SUNDAY"); break  // "1" ===1
+            case 2: document.write("MONDAY"); break
+            case 3: document.write("TUESDAY"); break
+            case 4: document.write("WEDNESDAY"); break
+            case 5: document.write("THURSDAY"); break
+            case 6:
+            let times = 3
+            while (times > 0) {
+                document.write("Yeeey!!! :)")
+                times--
+            }
+            document.write("FRIDAY"); break
+            case 7: document.write("SATURDAY"); break
+
+            default: document.write("Are you drunk? "); break
+            }
+        }else {
+            alert("ERROR:Write the corect name of the calender")
+        }   
+</script>
